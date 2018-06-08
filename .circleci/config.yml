@@ -1,0 +1,8 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: nickblah/lua-resty-txid-test:latest
+    steps:
+      - checkout
+      - run: make test
